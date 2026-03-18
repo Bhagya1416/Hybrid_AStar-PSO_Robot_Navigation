@@ -121,18 +121,18 @@ for ax, (title, grid) in zip(axs, maps):
 
     selected_pairs.append((title, start, goal))
 
-# -------------------------------------------------
+# -----------------------------------------------
 # Common Legend
-# -------------------------------------------------
+# -----------------------------------------------
 handles, labels = axs[0].get_legend_handles_labels()
 fig.legend(handles, labels, loc='lower center', ncol=2, fontsize=10)
 
 plt.tight_layout(rect=[0, 0.06, 1, 1])
 plt.show()
 
-# -------------------------------------------------
+# -----------------------------------------------
 # Print Selected Start–Goal Pairs
-# -------------------------------------------------
+# -----------------------------------------------
 print("\nUser-Defined Start–Goal Pairs (Hybrid A* + PSO):")
 for item in selected_pairs:
     print(item)
