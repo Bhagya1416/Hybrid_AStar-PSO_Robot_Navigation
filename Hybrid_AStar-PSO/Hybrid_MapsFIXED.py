@@ -58,9 +58,9 @@ for ax, (title, grid) in zip(axs, maps):
         spine.set_linewidth(2)
         spine.set_color('black')
 
-# -------------------------------------------------
+# ------------------------------------------------
 # Common Legend
-# -------------------------------------------------
+# ------------------------------------------------
 handles, labels = axs[0].get_legend_handles_labels()
 fig.legend(handles, labels, loc='lower center', ncol=2, fontsize=10)
 
