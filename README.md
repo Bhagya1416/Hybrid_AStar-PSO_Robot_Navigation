@@ -62,10 +62,10 @@ Each stochastic algorithm is evaluated across **30 independent runs**.
 
 ## Research Paper
 
-The complete research paper describing the methodology and experiments can be found in:
+The complete research paper describing the methodology and experiments can be found in below link:
 
 ```
-research_paper.pdf [LINK: https://drive.google.com/file/d/11mHyn_RpS36in5J4CN3XLKIkq5uDsJ1T/view?usp=drivesdk]
+https://drive.google.com/file/d/11mHyn_RpS36in5J4CN3XLKIkq5uDsJ1T/view?usp=drivesdk
 ```
 
 ---
@@ -75,7 +75,7 @@ research_paper.pdf [LINK: https://drive.google.com/file/d/11mHyn_RpS36in5J4CN3XL
 During the research phase, several experimental algorithms and early prototypes were developed. These are stored in:
 
 ```
-research_experiments/
+Research_experiments/
 ```
 
 These codes were not included in the final evaluation results but are preserved for transparency and future research.
