@@ -131,18 +131,39 @@ Each stochastic algorithm is evaluated across **30 independent runs** for statis
 
 # Project Structure
 
-```text
+```bash
 Hybrid_AStar-PSO_Robot_Navigation/
 │
-├── README.md
-├── requirements.txt
-├── main.py
-├── Map_generation.py
-├── Research_experiments/
+├── AStar/
+│   ├── AStar_MapsFIXED.py
+│   ├── AStar_MapsRANDOM.py
+│   ├── AStar_MultiObj.py
+│   └── AStar_Statistical analysis.py
+│
+├── Hybrid_AStar_PSO/
+│   ├── Hybrid_AStar_PSO.py
+│   ├── Hybrid_MapsFIXED.py
+│   ├── Hybrid_MapsRANDOM.py
+│   └── Hybrid_Statistical analysis.py
+│
+├── PSO/
+│   ├── PSO_MapsFIXED.py
+│   ├── PSO_MapsRANDOM.py
+│   ├── PSO_MultiObj.py
+│   └── PSO_Statistical analysis.py
+│
 ├── images/
-│   ├── output1.png
-│   └── output2.png
-└── outputs/
+│   ├── gridmap.png
+│   ├── maps.png
+│   ├── output.png
+│   ├── pathComparision.png
+│   ├── wayPointSensitivityPaths.png
+│   ├── waySensitivityCurves.png
+│   
+├── Map_Generation.py
+├── README.md
+├── main.py
+└── requirements.txt
 ```
 
 ---
@@ -210,29 +231,91 @@ python main.py
 
 ---
 
-# Results
+# 📊 Results and Visualization
 
-## Simulation Outputs
+This section presents the experimental outputs and comparative analysis of the proposed **Hybrid A*–PSO** path planning framework in structured grid environments.
 
-```md
-![Simulation Result](images/gridmap.png)
-```
+The experiments were conducted on multiple static obstacle maps to evaluate:
+- Path optimality
+- Navigation smoothness
+- Obstacle avoidance capability
+- Convergence behavior
+- Waypoint sensitivity performance
 
-```md
-![Simulation Result](images/output.png)
-```
+---
 
-```md
-![Simulation Result](images/pathComparision.png)
-```
+# 🗺️ Grid Environment
 
-```md
-## Result 1
-![Result 1](images/wayPointSensitivityPaths.png)
+The robot navigation framework operates on structured 2D grid maps containing static obstacles and predefined start–goal positions.
 
-## Result 2
-![Result 2](images/waySensitivityCurves.png)
-```
+<p align="center">
+  <img src="images/gridmap.png" width="700"/>
+</p>
+
+---
+
+# 🧩 Experimental Maps
+
+Different map configurations were designed to test the robustness of the algorithms under varying obstacle densities and navigation complexities.
+
+<p align="center">
+  <img src="images/maps.png" width="700"/>
+</p>
+
+---
+
+# 🚀 Hybrid A*–PSO Navigation Output
+
+The proposed hybrid algorithm combines deterministic search with stochastic optimization to generate collision-free and optimized robot paths.
+
+<p align="center">
+  <img src="images/output.png" width="700"/>
+</p>
+
+---
+
+# 📈 Path Comparison Analysis
+
+Comparative analysis between:
+- Multi-Objective A*
+- Multi-Objective PSO
+- Proposed Hybrid A*–PSO
+
+The Hybrid approach demonstrates improved path smoothness, shorter traversal distance, and enhanced obstacle handling.
+
+<p align="center">
+  <img src="images/pathComparision.png" width="700"/>
+</p>
+
+---
+
+# 🎯 Waypoint Sensitivity Analysis
+
+The following experiment evaluates the impact of waypoint variation on generated robot trajectories.
+
+<p align="center">
+  <img src="images/wayPointSensitivityPaths.png" width="700"/>
+</p>
+
+---
+
+# 📉 Sensitivity Curve Evaluation
+
+Performance sensitivity curves illustrate convergence stability and optimization behavior under different waypoint configurations.
+
+<p align="center">
+  <img src="images/waySensitivityCurves.png" width="700"/>
+</p>
+
+---
+
+# ✅ Key Outcomes
+
+- Developed a hybrid deterministic–stochastic path planning framework.
+- Improved navigation efficiency in structured environments.
+- Achieved smoother and shorter collision-free paths.
+- Enhanced convergence performance compared to standalone methods.
+- Successfully validated algorithm robustness across multiple grid scenarios.
 
 ---
 
