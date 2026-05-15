@@ -157,33 +157,14 @@ Hybrid_AStar-PSO_Robot_Navigation/
 │   ├── maps.png
 │   ├── output.png
 │   ├── pathComparision.png
-│   ├── wayPointSensitivityPaths.png
-│   ├── waySensitivityCurves.png
+│   ├── waypointSensitivityPaths.png
+│   ├── weightSensitivityCurves.png
 │   
 ├── Map_Generation.py
 ├── README.md
 ├── main.py
 └── requirements.txt
 ```
-
----
-
-# Research Experiments
-
-During the research phase, several experimental algorithms and early prototypes were developed.
-
-These implementations are stored inside:
-
-```text
-Research_experiments/
-```
-
-These experimental codes were not included in the final evaluation results but are preserved for:
-
-* Research transparency
-* Comparative analysis
-* Future improvements
-* Algorithm exploration
 
 ---
 
@@ -294,7 +275,7 @@ The Hybrid approach demonstrates improved path smoothness, shorter traversal dis
 The following experiment evaluates the impact of waypoint variation on generated robot trajectories.
 
 <p align="center">
-  <img src="images/wayPointSensitivityPaths.png" width="700"/>
+  <img src="images/waypointSensitivityPaths.png" width="700"/>
 </p>
 
 ---
@@ -304,7 +285,7 @@ The following experiment evaluates the impact of waypoint variation on generated
 Performance sensitivity curves illustrate convergence stability and optimization behavior under different waypoint configurations.
 
 <p align="center">
-  <img src="images/waySensitivityCurves.png" width="700"/>
+  <img src="images/weightSensitivityCurves.png" width="700"/>
 </p>
 
 ---
