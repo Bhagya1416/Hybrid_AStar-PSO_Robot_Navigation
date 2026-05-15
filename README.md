@@ -212,7 +212,7 @@ python main.py
 
 ---
 
-# 📊 Results and Visualization
+# Results and Visualization
 
 This section presents the experimental outputs and comparative analysis of the proposed **Hybrid A*–PSO** path planning framework in structured grid environments.
 
@@ -225,7 +225,7 @@ The experiments were conducted on multiple static obstacle maps to evaluate:
 
 ---
 
-# 🗺️ Grid Environment
+# Grid Environment
 
 The robot navigation framework operates on structured 2D grid maps containing static obstacles and predefined start–goal positions.
 
@@ -235,7 +235,7 @@ The robot navigation framework operates on structured 2D grid maps containing st
 
 ---
 
-# 🧩 Experimental Maps
+# Experimental Maps
 
 Different map configurations were designed to test the robustness of the algorithms under varying obstacle densities and navigation complexities.
 
@@ -245,7 +245,7 @@ Different map configurations were designed to test the robustness of the algorit
 
 ---
 
-# 🚀 Hybrid A*–PSO Navigation Output
+# Hybrid A*–PSO Navigation Output
 
 The proposed hybrid algorithm combines deterministic search with stochastic optimization to generate collision-free and optimized robot paths.
 
@@ -255,7 +255,7 @@ The proposed hybrid algorithm combines deterministic search with stochastic opti
 
 ---
 
-# 📈 Path Comparison Analysis
+# Path Comparison Analysis
 
 Comparative analysis between:
 - Multi-Objective A*
@@ -270,7 +270,7 @@ The Hybrid approach demonstrates improved path smoothness, shorter traversal dis
 
 ---
 
-# 🎯 Waypoint Sensitivity Analysis
+# Waypoint Sensitivity Analysis
 
 The following experiment evaluates the impact of waypoint variation on generated robot trajectories.
 
@@ -280,7 +280,7 @@ The following experiment evaluates the impact of waypoint variation on generated
 
 ---
 
-# 📉 Sensitivity Curve Evaluation
+# Sensitivity Curve Evaluation
 
 Performance sensitivity curves illustrate convergence stability and optimization behavior under different waypoint configurations.
 
@@ -290,7 +290,7 @@ Performance sensitivity curves illustrate convergence stability and optimization
 
 ---
 
-# ✅ Key Outcomes
+# Key Outcomes
 
 - Developed a hybrid deterministic–stochastic path planning framework.
 - Improved navigation efficiency in structured environments.
